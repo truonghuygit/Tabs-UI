@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body > div {
+  margin: 5% auto 0;
+  max-width: 720px;
+}
+.tab {
+  display: flex;
+  position: relative;
+}
+.tab-item {
+  color: #c23564;
+  font-size: 30px;
+  padding: 16px 20px 11px 20px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+}
+.tab-item:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+.tab-item.active {
+  opacity: 1;
+}
+
+/* Panes */
+.panes {
+  padding: 28px 0;
+  margin-top: 0;
+}
+.pane-item {
+  display: none;
+}
+.pane-item.active {
+  display: block;
+}
+.pane-item h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
